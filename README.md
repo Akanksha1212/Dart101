@@ -80,8 +80,11 @@ void main(){
   // Arithmetic Operators
   // +, -,*, / same as other languages
   //Unary minus used to reverse the sign of an expression like -(a-b)
-  // 
   
+  int a =20;
+  int b = 7;
+  int ans = a~/b; // ~/ is integer division operator which truncates decimal part
+  print(ans); // output = 3
   
   
 
