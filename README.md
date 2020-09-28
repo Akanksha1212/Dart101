@@ -39,6 +39,17 @@ void main(){
    int n = 10;
    double m = 10.5;
    
+   num n=10;
+   int n1=10;
+   double n2=10.5;
+   print(n+n1+n2);
+   // parse function allows us to convert string containing numeric literal into a number
+   print(num.parse('12'));
+   // This will give error
+   //   print(num.parse('12A'));
+
+   // num is superclass of int and double
+   
    // Strings
    var s = "Hi";
    String s1 = "Bye";
@@ -91,6 +102,19 @@ void main(){
   print(num is int); // Output: true
   double sum = 6.66;
   print(num is! int); // Output: true
+  
+  // Null-aware operators
+  // Assign only when it’s null
+  int a=5;
+  int b=7;
+  var c= a*b;
+  print(c);
+  var d; // d is null
+  d??=a+b; // d wil be assigned value 12
+  print(d);  // Output : 12
+  d??=a-b;  // d was already assigned a value so it won't change now
+  print(d);
+
 }
 ```
 
