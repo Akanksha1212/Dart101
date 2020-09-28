@@ -86,8 +86,47 @@ void main(){
   int ans = a~/b; // ~/ is integer division operator which truncates decimal part
   print(ans); // output = 3
   
-  
-
-
+  // Type Test Operator ( is and is!)
+  int num = 6;
+  print(num is int); // Output: true
+  double sum = 6.66;
+  print(num is! int); // Output: true
 }
+```
+
+### Cascade Notation (..)
+This allows us to perform a sequence of operation on the same object.
+
+```
+class Number{
+  var a;
+  var b;
+  void setA(x)
+  {
+    this.a = x;
+  }
+  void setB(y)
+  {
+    this.b = y;
+  }
+  void show(){
+  print(this.a);
+  print(this.b);
+  }
+}
+
+void main(){
+  Number n1 = new Number();
+  Number n2 = new Number();
+  
+  // Without cascade notation
+  n1.setA(10);
+  n1.setB(20);
+  n1.show();
+  
+  // With cascade notation 
+  n2..setA(10);
+    ..setB(20);
+    ..show();
+ }
 ```
