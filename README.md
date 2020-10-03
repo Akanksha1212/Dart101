@@ -1,7 +1,7 @@
 # Dart101
 <img src="https://raw.githubusercontent.com/kevmoo/dart_side/master/Dash%20Dart%20PNG%20%20-%20white.png" width=900>  
 
-Open https://www.dartpad.dev/ and run all these snippets and experiement with them to undertand things more clearly  
+Open https://www.dartpad.dev/ and run all these snippets and experiement with them to understand things more clearly  
 ## Hello World!:earth_asia:
 ```
 void main(){
